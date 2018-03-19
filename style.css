@@ -7,7 +7,7 @@
 }
 .container {
     max-width: 1600px;
-    width: 110%;
+    width: 100%;
     margin: 0 auto;
 }
 .section1 {
@@ -55,7 +55,7 @@
   min-height: 12vh;
 }
 .mar1 {
-  padding-top: 40px;
+  padding-top: 50px;
 }
 .bottomline {
   position: absolute;
@@ -159,7 +159,7 @@
 }
  .phone {
   position:absolute;
-  bottom: -5%;
+  bottom: -3.5%;
   right:  3%;
 }
 .fa-phone {
@@ -195,6 +195,7 @@
 }
 .p2 {
   margin-top: 1.5em;
+  margin-bottom: 2em;
   font-family: Montserrat;
   font-weight: bold;
   text-transform: uppercase;
@@ -250,14 +251,23 @@
    background-color: #000;
    flex-flow: column wrap;
    justify-content:space-between;
+   align-content: center;
    align-items: center;
    min-height: 50vh;
 }
 .services {
-  width: 19vw;
+  max-width: 25vw;
+  min-width: 19vw;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center; /*space-between;*/
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+.special {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
   align-items: center;
   color: #fff;
 }
@@ -269,6 +279,12 @@
   height: 23vh;
   background-color: #383838;
 }
+.vertical-line1 {
+  width: 1px;
+  height: 23vh;
+  background-color: #383838;
+}
+
 .logo {
   text-align: center;
 }
@@ -296,7 +312,7 @@
   justify-content: center;
   align-items: center;
   width:90vw;
-  margin: 0 auto;
+/*   margin: 0 auto; */
   }
 .p1 {
   font-family: Montserrat;
@@ -312,14 +328,14 @@
 }
 .p1:first-of-type {
   padding-left: 50px;
-  border-top-left-radius: 23%;
-  border-bottom-left-radius: 23%;
+  border-top-left-radius: 23px;
+  border-bottom-left-radius: 23px;
 
 }
 .p1:last-of-type {
   padding-right: 50px;
-  border-top-right-radius:  23%;
-  border-bottom-right-radius: 23%;
+  border-top-right-radius:  23px;
+  border-bottom-right-radius: 23px;
 }
 .underline {
   position: relative;
@@ -359,7 +375,7 @@
 }
 .person {
   margin: 10px;
-  min-width: 23vw;
+  min-width: 20vw;
   min-height: 45vh;
   background-color: #fff;
   text-align: center;
@@ -398,6 +414,7 @@
 }
  .logo1 {
   width: 20vh;
+  text-align: center;
 }
 .section8 {
   background-color: #EDEDED;
@@ -410,11 +427,11 @@
 }
 .arrows {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   background: #ffffff;
-  min-width: 18vw;
+  min-width: 17vw;
   min-height: 40vh;
   margin-right: 20px;
   margin-bottom: 4em;
@@ -456,13 +473,14 @@
   min-height: 90vh;
 }
 .photo3 {
-  min-width: 45vw;
+  min-width: 35vw;
 }
 .photo3 img {
-  margin-left: 15vw;
+  margin-left: 10vw;
 }
 .feature {
-  min-width:50vw;
+  margin: 2em auto;
+  min-width:45vw;
   text-align: left;
 }
 .feature span {
@@ -503,7 +521,7 @@
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: flex-start;
-  margin-top: 2.0em;
+  margin-top: 0em;
   margin-bottom: 2em
 }
 .gold {
@@ -512,8 +530,8 @@
   font-weight: 900;
   color: #BF8B4E;
 }
-.services  {
-  max-width: 17vw;
+.services1  {
+  max-width: 15vw;
   text-align: center;
 }
 .section11 {
@@ -587,7 +605,7 @@
 }
 .angle {
   position: absolute;
-    top: -15%;
+    top: -12%;
     left: 5%;
 }
 .fa-angle-up {
@@ -632,7 +650,7 @@
   background-color: #373737;
 }
 
-@media(max-width: 1090px) {
+@media(max-width: 1250px) {
 .nav-bar {
   margin-left: 0;
   margin-top: 1em;
@@ -662,14 +680,61 @@
   flex-flow: column;
   justify-content: center;
 }
+.btn {
+    width: 10em;
+}
+.photo3 img {
+  margin-left: 0;
+}
 }
 @media(max-width: 780px) {
   .row2 {
     margin: 0;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
+    }
+    .row1 {
+      width: 55vw;
+      margin: 0 auto;
+     }
+    .p1 {
+     min-width: 160px;
+      margin-top: 0;
+      margin-bottom: 0;
+     }
+     .p1:first-of-type {
+       padding-left: 20px;
+       border-top-left-radius: 0;
+       border-bottom-left-radius: 0;
+
+     }
+     .p1:last-of-type {
+       padding-right: 20px;
+       border-top-right-radius:  0;
+       border-bottom-right-radius: 0;
+     }
+     .title {
+       font-size:  48px;
+     }
+
+    .btn1 {
+      width:  8em;
+    }
+    .logo {
+      margin-top: 2em;
+    }
+    .angle {
+      position: absolute;
+        top: -4%;
+        left: 3%;
+    }
   }
+@media(max-width: 620px) {
+    .services {
+      min-width: 25vw;
+    }
+
 }
